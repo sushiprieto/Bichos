@@ -75,7 +75,7 @@ public class Manejadora {
         }catch (SQLException e){
             e.printStackTrace();
         }
-        
+
     }
 
     /**

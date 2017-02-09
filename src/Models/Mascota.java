@@ -39,8 +39,6 @@ public class Mascota {
     @JoinColumn(name="CodigoPropietario")
     private Cliente codPropietario;
 
-
-    @OneToMany(mappedBy="mascota", cascade= CascadeType.ALL)
     private Set<EnfermedadMascota> enfermedadesMascotas;
 
     public Mascota(){}

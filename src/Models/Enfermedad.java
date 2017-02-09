@@ -15,10 +15,9 @@ public class Enfermedad {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    @Column(name="Nombre")
+    @Column(name = "Nombre")
     private String nombre;
 
-    @OneToMany(mappedBy="enfermedad",cascade = CascadeType.ALL)
     private Set<EnfermedadMascota> enfermedadesMascotas;
 
     public Enfermedad(){
